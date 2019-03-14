@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>
+Phone directory
+</title>
+<style>
+#a{
+background-color:orange;
+}
+#b{
+width:240px;
+height:200px;
+background-color:yellow;
+padding:60pxpx;
+float:left;
+}
+body{
+background-color:pink;
+}
+#c{
+height:200px;
+border-color:green;
+border-style:3px;
+background-color:pink;
+}
+#e{
+border-style:3px;
+}
+#f{
+background-color:green;
+height:30px;
+}
+</style>
+</head>
+<body>
+<div id="a" height="200px">
+<center><h1><b><u>PHONE DIRECTORY</u></b></h1></center>
+</div>
+<div id="b">
+<center>NAME:<br><input id="1" type="text" placeholder="name"></input><br><br>
+PHONE NUMBER:<input id="g" type="number" placeholder="phone number"></input><br><br>
+EMAIL ID:<input id="h" type="email" placeholder="xyz@abcd.com"></input><br>
+<button id="f" type="button">ADD</button>
+<br><Br><br>
+<a href="home.html"><button type="button">BACK</button></a>
+<p id="3"></p>
+<p id="4"></p>
+<p id="5"></p>
+</center>
+</div>
+<div id="d">
+</div>
+<script>
+document.getElementById("f").onclick=function()
+{
+var text=" ";
+text=document.getElementById("1").value;
+alert(text);
+document.getElementById("3").innerHTML=text;
+var text1=" ";
+text1=document.getElementById("g").value;
+alert(text1);
+document.getElementById("4").innerHTML=text1;
+var text2=" ";
+text2=document.getElementById("h").value;
+alert(text2);
+document.getElementById("5").innerHTML=text2;
+}
+</script>
+<div>
+</div>
+</body>
+</html>
